@@ -3,7 +3,8 @@ Quick Elytra adds a keybind that lets you swap your equipped elytra/chestplate. 
 
 The default keybind is 'G' but can easily be changed in the keybind control settings.
 
-Official mod download links:
+
+# Official mod download links:
 
 https://www.modrinth.com/mod/quick-elytra
 
