@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Quick Elytra",
-  "description": "Quick Elytra adds a keybind that lets you swap your equipped elytra/chestplate. It prioritises equipment with the most enchantments/enchantment levels and durability.",
+  "description": "Adds multiple Quality of Life features that make your Minecraft experience easier.\nCurrent features:\n  *  A keybind that swaps your equipped elytra/chestplate upon pressed;\n  *  A keybind that equips a Totem of Undying upon pressed\n",
   "authors": [
     "glitchifyed"
   ],
@@ -37,6 +37,5 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
   }
 }

@@ -1,4 +1,6 @@
 {
   "key.category.glitchifyed.quick_elytra": "Quick Elytra",
-  "key.glitchifyed.quick_elytra.toggle_equip": "Swap elytra/chestplate"
+  "key.glitchifyed.quick_elytra.toggle_equip": "Swap elytra/chestplate",
+
+  "key.glitchifyed.quick_elytra.equip_totem": "Equip totem"
 }
