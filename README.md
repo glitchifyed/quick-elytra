@@ -11,6 +11,8 @@ The default keybind is 'G' but it can easily be changed in the keybind control s
 \
 The default keybind is 'X' but it can easily be changed in the keybind control settings.
 * Auto replant crops that are mined by a hoe. Use the config in the mod menu to change its functionality. (v3.0.0)
+\
+This is untested on multiplayer servers so use at your own risk.
 
 ## Downloads
 https://www.modrinth.com/mod/quick-elytra
