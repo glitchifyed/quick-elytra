@@ -2,12 +2,15 @@
 Quick Elytra adds 'Quality of Life' changes such as adding keybinds that swap items in your inventory.
 
 ## Features
-* A keybind that lets you swap your equipped elytra/chestplate.
+* A keybind that lets you swap your equipped elytra/chestplate. (v1.0.0)
+\
 It prioritises equipment with the most enchantments/enchantment levels and durability.
+\
 The default keybind is 'G' but it can easily be changed in the keybind control settings.
-* A keybind that puts a Totem of Undying in your offhand if you don't already have one equipped.
+* A keybind that puts a Totem of Undying in your offhand if you don't already have one equipped. (v2.0.0)
+\
 The default keybind is 'X' but it can easily be changed in the keybind control settings.
-
+* Auto replant crops that are mined by a hoe. Use the config in the mod menu to change its functionality. (v3.0.0)
 
 ## Downloads
 https://www.modrinth.com/mod/quick-elytra

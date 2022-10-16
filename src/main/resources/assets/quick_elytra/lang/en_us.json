@@ -1,6 +1,14 @@
 {
   "key.category.glitchifyed.quick_elytra": "Quick Elytra",
-  "key.glitchifyed.quick_elytra.toggle_equip": "Swap elytra/chestplate",
 
-  "key.glitchifyed.quick_elytra.equip_totem": "Equip totem"
+  "key.glitchifyed.quick_elytra.toggle_equip": "Swap elytra/chestplate",
+  "key.glitchifyed.quick_elytra.equip_totem": "Equip totem",
+  "key.glitchifyed.quick_elytra.open_config": "Open config",
+
+  "title.glitchifyed.quick_elytra.config": "Quick Elytra config",
+
+  "category.glitchifyed.quick_elytra.general": "General",
+
+  "option.glitchifyed.quick_elytra.replant_crops": "Auto replant crops",
+  "option.glitchifyed.quick_elytra.replant_swaps": "Swap offhand back"
 }

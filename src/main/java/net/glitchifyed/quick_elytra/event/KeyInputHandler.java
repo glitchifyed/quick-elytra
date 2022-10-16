@@ -2,9 +2,7 @@ package net.glitchifyed.quick_elytra.event;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.api.item.v1.EquipmentSlotProvider;
-import net.glitchifyed.quick_elytra.QuickElytra;
-import net.minecraft.client.MinecraftClient;
+import net.glitchifyed.quick_elytra.config.ConfigHandler;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.util.InputUtil;
@@ -20,27 +18,37 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.Map;
 
+import static net.glitchifyed.quick_elytra.QuickElytra.CLIENT;
+
 public class KeyInputHandler {
     public static final String KEY_CATEGORY_EQUIP = "key.category.glitchifyed.quick_elytra";
     public static final String KEY_TOGGLE_EQUIP = "key.glitchifyed.quick_elytra.toggle_equip";
     public static final String KEY_EQUIP_TOTEM = "key.glitchifyed.quick_elytra.equip_totem";
+    public static final String KEY_OPEN_CONFIG = "key.glitchifyed.quick_elytra.open_config";
 
     public static KeyBinding toggleEquip;
     public static KeyBinding equipTotem;
+    public static KeyBinding openConfig;
 
     final static int ARMOUR_SLOT = 6;
     final static int OFFHAND_SLOT = 45;
     static boolean chestPressed;
     static boolean totemPressed;
 
-    static MinecraftClient CLIENT = MinecraftClient.getInstance();
-
     public static void registerKeyInputs() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             swapChestplateSlot();
 
             quickTotemEquip();
+
+            configPressed();
         });
+    }
+
+    static void configPressed() {
+        if (openConfig.wasPressed()) {
+            CLIENT.setScreen(ConfigHandler.createConfigMenu());
+        }
     }
 
     static void swapChestplateSlot() {
@@ -163,6 +171,13 @@ public class KeyInputHandler {
                 KEY_EQUIP_TOTEM,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_X,
+                KEY_CATEGORY_EQUIP
+        ));
+
+        openConfig = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                KEY_OPEN_CONFIG,
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_O,
                 KEY_CATEGORY_EQUIP
         ));
 

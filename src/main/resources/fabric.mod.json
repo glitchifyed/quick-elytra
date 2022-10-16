@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Quick Elytra",
-  "description": "Adds multiple Quality of Life features that make your Minecraft experience easier.\nCurrent features:\n  *  A keybind that swaps your equipped elytra/chestplate upon pressed;\n  *  A keybind that equips a Totem of Undying upon pressed\n",
+  "description": "Adds multiple Quality of Life features that make your Minecraft experience easier.\nCurrent features:\n  *  A keybind that swaps your equipped elytra/chestplate upon pressed;\n  *  A keybind that equips a Totem of Undying upon pressed;\n  *  Auto replant crops that are mined by a hoe. Use the config in the mod menu to change its functionality\n",
   "authors": [
     "glitchifyed"
   ],
@@ -17,13 +17,13 @@
   "license": "LGPL-3.0",
   "icon": "assets/quick_elytra/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "net.glitchifyed.quick_elytra.QuickElytra"
     ],
-    "client": [
-      "net.glitchifyed.quick_elytra.QuickElytraClient"
+    "modmenu": [
+      "net.glitchifyed.quick_elytra.config.QuickElytraModMenu"
     ]
   },
   "mixins": [
@@ -34,8 +34,10 @@
     "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "cloth-config": "*"
   },
   "suggests": {
+    "modmenu": "*"
   }
 }
