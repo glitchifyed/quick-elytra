@@ -1,5 +1,6 @@
 # Warning
 This mod has been deprecated. If you're looking for an up to date mod, please use Quick Hotkeys instead.
+\
 https://github.com/glitchifyed/quick-elytra
 \
 https://modrinth.com/mod/quick_hotkeys
